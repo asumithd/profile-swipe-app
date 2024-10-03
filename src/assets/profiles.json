@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Pragati",
+    "age": 27,
+    "location": "Chennai, Tamil Nadu",
+    "description": "MBBS Doctor, 5 ft 5 in",
+    "image": "assets/images/pragati.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Priyanka",
+    "age": 27,
+    "location": "Chennai, Tamil Nadu",
+    "description": "MBBS Doctor, 5 ft 2 in",
+    "image": "assets/images/priyanka.jpg"
+  }
+]

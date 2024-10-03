@@ -1,0 +1,57 @@
+<ion-content>
+  <ion-card *ngIf="profiles.length > 0">
+    <ion-img
+      [src]="profiles[currentIndex]?.image"
+      (click)="viewProfile(profiles[currentIndex]?.id)"
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ profiles[currentIndex]?.name }}</ion-card-title>
+      <ion-card-subtitle
+        >{{ profiles[currentIndex]?.age }} Yrs,
+        {{ profiles[currentIndex]?.location }}</ion-card-subtitle
+      >
+    </ion-card-header>
+    <ion-card-content>
+      {{ profiles[currentIndex]?.description }}
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col size="4">
+        <ion-button expand="block" color="danger" (click)="onSwipeLeft()">
+          <ion-icon name="close"></ion-icon> No
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button expand="block" color="tertiary" (click)="onShortlist()">
+          <ion-icon name="star"></ion-icon> Shortlist
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button
+          expand="block"
+          color="success"
+          (click)="onSwipeRight(profiles[currentIndex]?.id)"
+        >
+          <ion-icon name="checkmark"></ion-icon> Yes
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
+<!-- <ion-content>
+  <mat-card *ngIf="profiles.length > 0">
+    <img mat-card-image [src]="profiles[currentIndex]?.image">
+    <mat-card-title>{{ profiles[currentIndex]?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ profiles[currentIndex]?.age }} Yrs, {{ profiles[currentIndex]?.location }}</mat-card-subtitle>
+
+    <mat-card-content>
+      {{ profiles[currentIndex]?.description }}
+    </mat-card-content>
+
+    <div>
+      <button mat-raised-button color="warn" (click)="onSwipeLeft()">Not Interested</button>
+      <button mat-raised-button color="primary" (click)="onShortlist()">Shortlist</button>
+      <button mat-raised-button color="accent" (click)="onSwipeRight()">Interested</button>
+    </div>
+  </mat-card>
+</ion-content> -->

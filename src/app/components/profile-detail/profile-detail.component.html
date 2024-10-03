@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-card *ngIf="profile">
+    <ion-img [src]="profile.image"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>{{ profile.name }}</ion-card-title>
+      <ion-card-subtitle
+        >{{ profile.age }} Yrs, {{ profile.location }}</ion-card-subtitle
+      >
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ profile.description }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

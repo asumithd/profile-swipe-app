@@ -1,0 +1,7 @@
+{
+  "name": "profile-swipe-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
